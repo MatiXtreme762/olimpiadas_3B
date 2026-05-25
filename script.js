@@ -56,6 +56,7 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaPerguntas.textContent = "Resultado";
     caixaAlternativas.textContent = "";
+}
 function podiumMedalhas(posicao) {
   if (posicao === 1) return "Medalha de Ouro!";
   if (posicao === 2) return "Medalha de Prata!";
