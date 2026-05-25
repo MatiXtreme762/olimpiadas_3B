@@ -68,7 +68,6 @@ let resultado = podiumMedalhas(1);
 console.log(resultado); 
 
     
-}
 
 function podiumMedalhas(pontos) {
     if (pontos === 3) {
