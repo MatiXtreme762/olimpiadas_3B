@@ -17,11 +17,11 @@ const textoResultado = document.querySelector(".texto-resultado");
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
-let pontos = 0;
 
 //Assim como a variável atual (acima)
 //Crie uma variável com o nome pontos que inicie com 0
 
+let pontos = 0;
 
 function mostraPergunta(){
     if(atual >= perguntas[escolha].length){
@@ -56,18 +56,17 @@ function mostraResultado(){
     textoResultado.textContent = historiaFinal;
     caixaPerguntas.textContent = "Resultado";
     caixaAlternativas.textContent = "";
-}
 function podiumMedalhas(posicao) {
-  if (posicao === 1) return "Medalha de Ouro!";
-  if (posicao === 2) return "Medalha de Prata!";
-  if (posicao === 3) return "Medalha de Bronze!";
-  return "Sem medalha.";
+    if (posicao === 1) return "Medalha de ouro";
+    if (posicao === 2) return "Medalha de Prata";
+    if (posicao === 3) return "Medalha de Bronze";
+    return "Sem medalha.";
 }
 
 let resultado = podiumMedalhas(1);
-console.log(resultado); 
-
+console.log(resultado);
     
+}
 
 function podiumMedalhas(pontos) {
     if (pontos === 3) {
@@ -78,7 +77,7 @@ function podiumMedalhas(pontos) {
         caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
     } else if (pontos === 5) {
         caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
-        caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
+        caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!"; 
     } else if (pontos < 3) {
         caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
         caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
